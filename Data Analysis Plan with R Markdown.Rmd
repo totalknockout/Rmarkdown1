@@ -1,0 +1,40 @@
+---
+title: "Data Analysis Plan For MTcars"
+output: html_document
+---
+Data Analysis Plan For MTCARS
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Analyzing the data
+
+### View the internal structure of the object.
+
+It is necessary to view the internal structure of the objects or data provided in order to guide our data analysis approach towards the data. This helps in understanding whether we have a categorical or quantitative variable.
+
+
+```{r cars}
+str(mtcars)
+```
+
+### Statistical Analysis of the data
+
+When analyzing data it is useful to observe the statistics summary of the data, to give an overview of the statistical behavior of the data provided.
+
+```{r cars}
+summary(mtcars)
+```
+We'll also view the header of the data provided. This helps to understand the values we are dealing with and also understand what values could be plotted when we get to the data visualization stage. 
+
+```{r}
+names(mtcars)
+```
+
+
+
+
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
